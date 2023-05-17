@@ -8,7 +8,6 @@ module cinto_seguranca (
 	output w_o
 );
 
-
 wire [7:0] second_w;
 
 digital_clock 
@@ -25,7 +24,6 @@ begin
 	else set_timer <= 0;
 end
 
-//assign t_i = set_timer;
 assign w_o = (( p_i & !ns_i & k_i) | set_timer);
 
 
